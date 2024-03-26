@@ -1,13 +1,13 @@
-// call for inquirer files
+// import inquirer files
 const inquirer = require("inquirer");
-// to call the file system module
+// import the file system module
 const fs = require('fs');
 //call to import the generateMarkdown JS file
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // const for the questions that will be prompted to the user.
 const prompts = () => {
-    return inquirer.prompts([
+    return inquirer.prompt([
         {
             type: "Input",
             name: "projecttitle",
@@ -23,13 +23,13 @@ const prompts = () => {
         {
             type: "Input",
             name: "installation",
-            message: "What is the title of your project?"
+            message: "Describe how to install project."
         },
 
         {
             type: "Input",
             name: "usage",
-            message: "What is the title of your project?"
+            message: "What is this project used for?"
         },
 
         {
@@ -64,7 +64,7 @@ const prompts = () => {
 
 
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
     prompts()
         // the answers promise 
@@ -73,7 +73,7 @@ function init() {
             const ReadmeContent = generateMarkdown(answers);
 
             // this is so that the README.md file is generated with thr user input using a conditional ternary operator.
-            fs.writefile(".//README.md", ReadmeContent, (err) => {
+            fs.writefile (".//README.md", ReadmeContent, (err) => {
                 // condition ? expression if true: expression if false
                 err ? console.log(err) : console.log("Successfully created new README.md")
             })
@@ -81,5 +81,5 @@ function init() {
 
 }
 
-// Function call to initialize app
+// calls the init function to initialize the application
 init();
