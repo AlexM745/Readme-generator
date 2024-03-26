@@ -6,8 +6,8 @@ const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // const for the questions that will be prompted to the user.
-const prompts = () => {
-    return inquirer.prompt([
+
+ const questions = [
         {
             type: "Input",
             name: "projecttitle",
@@ -56,24 +56,21 @@ const prompts = () => {
                 "BSD 3-Clause"
             ]
         },
-
-
-    ])
-
-};
+    ];
 
 
 
 // function to initialize app
 function init() {
-    prompts()
+    inquirer.prompt(questions)
         // the answers promise 
         .then((answers) => {
             // the readme content is the answers
             const ReadmeContent = generateMarkdown(answers);
+            console.log("content", ReadmeContent);
 
             // this is so that the README.md file is generated with thr user input using a conditional ternary operator.
-            fs.writefile (".//README.md", ReadmeContent, (err) => {
+            fs.writeFile("README.md", ReadmeContent, (err) => {
                 // condition ? expression if true: expression if false
                 err ? console.log(err) : console.log("Successfully created new README.md")
             })
