@@ -1,5 +1,7 @@
 // call for inquirer files
-const inquirer = require("./inquirer");
+const inquirer = require("inquirer");
+const fs = require('fs');
+//call to import the generateMarkdown JS file
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // questions that will be prompted to the user.
@@ -56,23 +58,21 @@ inquirer
 
 
     ])
-
+// the answers promise 
     .then((answers) => {
         const answersReadME = generateMarkdown(answers);
     })
-    .catch((error) => {
-        if (error.isTtyError){
-
-    } else {
-        
-    }
-});
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+// this is so that the README.md file is generated with thr user input using a conditional ternary operator.
+fs.writefile(".//README.md", answersReadME, (err) => {
+    // condition ? expression if true: expression if false
+    err ? console.log(err) : console.log("Successfully created new README.md")
+})
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() { 
+
+
+}
 
 // Function call to initialize app
 init();

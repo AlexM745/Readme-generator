@@ -1,5 +1,7 @@
 # 09 Node.js Challenge: Professional README Generator
 
+![badge](https://img.shields.io/badge/LICENSE-MIT-green)
+
 ## Description
 
 ## Table of Contents
@@ -45,5 +47,6 @@ THEN I am taken to the corresponding section of the README
 ## Credits
 
 ## License
+
 
 
