@@ -23,13 +23,13 @@ const questions = [
     {
         type: "Input",
         name: "installation",
-        message: "Describe how to install project."
+        message: "Describe how to install project:"
     },
 
     {
         type: "Input",
         name: "usage",
-        message: "What is this project used for?"
+        message: "Describe the usage of the project:"
     },
 
     {
@@ -40,10 +40,16 @@ const questions = [
 
     {
         type: "Input",
+        name: "gituser",
+        message: "What is yout GitHub Username?"
+    },
+
+    {
+        type: "Input",
         name: "contribution",
         message: "How can others contribute to your project?"
     },
-
+    
     {
         type: "list",
         name: "license",

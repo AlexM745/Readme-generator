@@ -5,6 +5,8 @@
 
   ## Description
   This is an application that takes user input from inquirer to create a README.md file for the user using the node command.
+
+  [![youtube video thumbnail](https://img.youtube.com/vi/VUWdu6AAnp8/0.jpg)](https://www.youtube.com/watch?v=VUWdu6AAnp8)
     
   
   ## Table of Contents
@@ -56,12 +58,12 @@ THEN I am taken to the corresponding section of the README
   `node index.js`
   
   ## Credits
-  [Alexis Merino](https://github.com/AlexM745);
+  [Alexis Merino](https://github.com/AlexM745)
 
   ## Contribution
   If you would like to contribute to the code or improve it you can fork the repository.
   
   ## License 
   
-  ![badge](https://img.shields,io/badge/license-MIT-green)
+  ![badge](https://img.shields.io/badge/LICENSE-MIT-green)
 
