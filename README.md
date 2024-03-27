@@ -1,9 +1,10 @@
 
-  # 09 Node.js Challenge: Professional README Generator
+  # Professional README Generator using Node
 
 ![badge](https://img.shields.io/badge/LICENSE-MIT-green)
 
   ## Description
+  This is an application that takes user input from inquirer to create a README.md file for the user using the node command.
     
   
   ## Table of Contents
@@ -43,16 +44,22 @@ THEN I am taken to the corresponding section of the README
 ```
 
   ## Installation
-  
+  In order to use this application you will need to write on your terminal the  the following commands:
+
+  `npm init`
+
+  `npm install inquirer`
   
   ## Usage
-  
+  Write the following command on your the root folder of your project and answer the questions that are prompted.
+
+  `node index.js`
   
   ## Credits
-  
+  [Alexis Merino](https://github.com/AlexM745);
 
   ## Contribution
-  
+  If you would like to contribute to the code or improve it you can fork the repository.
   
   ## License 
   
