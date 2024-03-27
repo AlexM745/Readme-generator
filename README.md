@@ -4,7 +4,7 @@
 ![badge](https://img.shields.io/badge/LICENSE-MIT-green)
 
   ## Description
-  This is an application that takes user input from inquirer to create a README.md file for the user using the node command.
+  This is an application that takes user input from inquirer to create a README.md file in the [example folder](https://github.com/AlexM745/Readme-generator/tree/main/example)for the user.
 
   [![youtube video thumbnail](https://img.youtube.com/vi/VUWdu6AAnp8/0.jpg)](https://www.youtube.com/watch?v=VUWdu6AAnp8)
     
